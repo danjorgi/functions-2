@@ -15,24 +15,25 @@ The code above is an example of 'function declaration.' Please re-write the func
 */
 
 // RE-WRITE THE ABOVE FUNCTION IN 'FUNCTION EXPRESSION' SYNTAX HERE.
-const findGrape = function(arr) {
-    for(let i = 0; i < arr.length; i++) {
-        if(arr[i].color === "purple") {
-            return console.log(`The fruit with index ${arr.indexOf(arr[i])} is a grape`)
-        }
-    }
-}
+
+// const findGrape = function(arr) {
+//     for(let i = 0; i < arr.length; i++) {
+//         if(arr[i].color === "purple") {
+//             return console.log(`The fruit with index ${arr.indexOf(arr[i])} is a grape`)
+//         }
+//     }
+// }
 
 
 // RE-WRITE THE ABOVE FUNCTION IN 'ARROW FUNCTION' SYNTAX HERE.
 
-findGrape = arr => {
-    for(let i = 0; i < arr.length; i++) {
-        if(arr[i].color === "purple") {
-            return console.log(`The fruit with index ${arr.indexof(arr[i])} is a grape`)
-        }
-    }
-}
+// findGrape = arr => {
+//     for(let i = 0; i < arr.length; i++) {
+//         if(arr[i].color === "purple") {
+//             return console.log(`The fruit with index ${arr.indexof(arr[i])} is a grape`)
+//         }
+//     }
+// }
 
 ////////// PROBLEM 2 //////////
 /*
@@ -40,10 +41,10 @@ Write a one line function (give a name of your choice) with an implicit return t
 */
 
 // CODE HERE
-
+giveParameters = (par1, par2) => console.log(`The first parameter is ${par1}. The second parameter is ${par2}`)
 
 // INVOKE THE FUNCTION HERE. THE PARAMETERS TAKE ANY DATATYPE.
-
+giveParameters(75, 22)
 
 ////////// PROBLEM 3 //////////
 /*
