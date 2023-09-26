@@ -27,7 +27,7 @@ The code above is an example of 'function declaration.' Please re-write the func
 
 // RE-WRITE THE ABOVE FUNCTION IN 'ARROW FUNCTION' SYNTAX HERE.
 
-// findGrape = arr => {
+// const findGrape = arr => {
 //     for(let i = 0; i < arr.length; i++) {
 //         if(arr[i].color === "purple") {
 //             return console.log(`The fruit with index ${arr.indexof(arr[i])} is a grape`)
@@ -41,7 +41,7 @@ Write a one line function (give a name of your choice) with an implicit return t
 */
 
 // CODE HERE
-giveParameters = (par1, par2) => console.log(`The first parameter is ${par1}. The second parameter is ${par2}`)
+const giveParameters = (par1, par2) => console.log(`The first parameter is ${par1}. The second parameter is ${par2}`)
 
 // INVOKE THE FUNCTION HERE. THE PARAMETERS TAKE ANY DATATYPE.
 giveParameters(75, 22)
@@ -53,12 +53,12 @@ Then, outside of the greeting function, invoke the greeting function, passing in
 */
 
 // CODE 'GREETING FUNCTION' HERE
-greeting = (firstName, lastName, callback) => {
+const greeting = (firstName, lastName, callback) => {
     const fullName = firstName + ' ' + lastName;
     callback(fullName);
 }
 
-newGreeting = fullName => console.log(`Hello, my full name is ${fullName}.`);
+const newGreeting = fullName => console.log(`Hello, my full name is ${fullName}.`);
 
 
 // INVOKE 'GREETING FUNCTION' HERE
@@ -78,7 +78,7 @@ Write a function called 'pricesPlusTax' that takes 2 params: an array ('prices' 
 */
 
 // CODE HERE
-pricesPlusTax = (arr, callback) => {
+const pricesPlusTax = (arr, callback) => {
    for (let i = 0; i < arr.length; i++) {
     totalCost.push(arr[i] + (arr[i] * .2))
    }
@@ -91,7 +91,7 @@ Invoke the 'pricesPlusTax' function, passing in the 'prices' array and a callbac
 */
 
 // CODE HERE
-pricesPlusTax(prices, (totalCost) => {
+const pricesPlusTax(prices, (totalCost) => {
     console.log('The new array prices plus tax =', totalCost)
     })
 
@@ -107,7 +107,7 @@ The inner function should run this logic: if the first number passing in is grea
 */
 
 // CODE HERE
-multiplyingFactory = (num1) => secondNum = (num2) => {
+const multiplyingFactory = (num1) => secondNum = (num2) => {
         if (num1 >= 5) {
             console.log(num1 * num2)
         } else {
