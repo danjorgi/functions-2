@@ -53,9 +53,16 @@ Then, outside of the greeting function, invoke the greeting function, passing in
 */
 
 // CODE 'GREETING FUNCTION' HERE
+greeting = (firstName, lastName, callback) => {
+    const fullName = firstName + ' ' + lastName;
+    callback(fullName);
+}
+
+newGreeting = fullName => console.log(`Hello, my full name is ${fullName}.`);
 
 
 // INVOKE 'GREETING FUNCTION' HERE
+greeting('Dan', 'Jorgensen', newGreeting)
 
 
 ////////// PROBLEM 4 //////////
