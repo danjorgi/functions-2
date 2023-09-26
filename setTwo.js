@@ -265,7 +265,13 @@ var users = [
 // Do not edit the code above.
 
 // CODE HERE 
-
+const getUserById = (arr, id, cb) => {
+  for (let i = 0; i < users.length; i++) {
+    if (arr[i].id === id) {
+      return cb(arr[i])
+    }
+  }
+}
 
 
 // UNCOMMENT THE FUNCTION CALL BELOW
