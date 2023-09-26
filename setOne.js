@@ -107,6 +107,13 @@ The inner function should run this logic: if the first number passing in is grea
 */
 
 // CODE HERE
+multiplyingFactory = (num1) => secondNum = (num2) => {
+        if (num1 >= 5) {
+            console.log(num1 * num2)
+        } else {
+            console.log('Cannot muliply: the first number is smaller than 6.')
+        }
+    }
 
 
 /* 
@@ -114,6 +121,7 @@ Let's invoke the 'multiplyingFactory' function that will return another function
 */
 
 // CODE HERE
+let timesFour = multiplyingFactory(5);
 
 
 /* 
@@ -125,6 +133,7 @@ Run the code in node to see the printed result. You should see "Cannot multiply:
 */
 
 // INVOKE 'timesFour' HERE
+timesFour(4)
 
 
 /* 
